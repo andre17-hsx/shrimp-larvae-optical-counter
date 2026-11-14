@@ -1,0 +1,9 @@
+#!/bin/bash
+source /usr/lib/openfoam/openfoam2512/etc/bashrc
+cp -r 0.orig 0
+blockMesh > log.blockMesh 2>&1
+checkMesh > log.checkMesh 2>&1
+setFields > log.setFields 2>&1
+interFoam > log.interFoam 2>&1
+postProcess -func writeCellCentres -latestTime > log.C 2>&1
+postProcess -func writeCellVolumes -latestTime > log.V 2>&1

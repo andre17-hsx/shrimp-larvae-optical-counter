@@ -1,0 +1,56 @@
+{
+ "unidades": "m",
+ "x_cresta": 0.0,
+ "caja": [
+  -0.4000000001000001,
+  -1.0000006070879796e-10,
+  -0.053404255419149,
+  0.5330000001,
+  0.00400000010000006,
+  0.3000000001000001
+ ],
+ "parches_caras": {
+  "inlet": 1,
+  "outlet": 1,
+  "atmosphere": 2,
+  "symmetry": 2,
+  "malla": 1,
+  "paredes": 14
+ },
+ "parches_triangulos": {
+  "inlet": 2,
+  "outlet": 2,
+  "atmosphere": 4,
+  "symmetry": 34,
+  "malla": 2,
+  "paredes": 28
+ },
+ "parches_area_m2": {
+  "inlet": 0.0012,
+  "outlet": 0.0004089536604845607,
+  "atmosphere": 0.001728,
+  "symmetry": 0.3816755493526864,
+  "malla": 0.0011287121029373865,
+  "paredes": 0.007345639680271004
+ },
+ "x_salida_m": 0.533,
+ "x_inicio_malla_m": 0.0,
+ "x_fin_malla_m": 0.28200000000000003,
+ "entrada": {
+  "x_m": -0.4,
+  "y_m": 0.0,
+  "radio_m": 0.0,
+  "z_base_m": -0.0
+ },
+ "nivel_cajon_m": 0.11248247198443476,
+ "alto_vertedero_m": 0.06,
+ "caudal_diseno_Ls": 10.0,
+ "pendiente_malla": 0.2127659574468085,
+ "ancho_canal_m": 0.504,
+ "losa_m": 0.004,
+ "punto_en_agua_m": [
+  -0.3,
+  0.002,
+  0.05
+ ]
+}

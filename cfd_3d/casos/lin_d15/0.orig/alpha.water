@@ -1,0 +1,42 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      alpha.water;
+}
+dimensions [0 0 0 0 0 0 0];
+internalField uniform 0;
+boundaryField
+{
+    inlet
+    {
+        type timeVaryingMappedFixedValue;
+        mapMethod nearest;
+        offset 0;
+        setAverage off;
+        value uniform 0;
+    }
+    outlet
+    {
+        type inletOutlet;
+        inletValue uniform 0;
+        value uniform 0;
+    }
+    symmetry
+    {
+        type symmetry;
+    }
+    malla
+    {
+        type zeroGradient;
+    }
+    fondo
+    {
+        type zeroGradient;
+    }
+    paredes
+    {
+        type zeroGradient;
+    }
+}

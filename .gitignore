@@ -1,0 +1,28 @@
+# Entornos y cachés
+.venv_cad/
+__pycache__/
+*.pyc
+node_modules/
+.claude/
+
+# Resultados crudos de OpenFOAM (4 GB): se regeneran con cfd_3d/scripts
+cfd_3d/resultados/
+cfd_3d/vistas/_tmp_ultimo.png
+cfd_3d/vistas/particulas_nuevo_diseno.gif
+
+# Material de terceros (plano del fabricante) y documentos internos
+Macro-1-Channel-layout-drawing.pdf
+drawing_anotado_*.png
+files/
+files.zip
+propuesta_sistema_conteo_larvas.pdf
+
+# Borradores y capturas de prueba
+diagrama_flujo/shots/
+diagrama_flujo/old/
+diagrama_flujo/cache_fig1.json
+diagrama_flujo/*.png
+diagrama_flujo/preview*
+diagrama_flujo/dbg.mjs
+diagrama_flujo/diagrama_flujo_artifact.html
+figura_anatomy/shots/

@@ -1,0 +1,29 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+
+application interFoam;
+startFrom startTime; startTime 0; stopAt endTime; endTime 0.3;
+deltaT 1e-5; writeControl adjustable; writeInterval 1; purgeWrite 3;
+writeFormat ascii; writePrecision 8; writeCompression off; timeFormat general; timePrecision 6;
+runTimeModifiable yes;
+adjustTimeStep yes; maxCo 0.5; maxAlphaCo 0.5; maxDeltaT 2e-3;
+functions
+{
+    promedios
+    {
+        type fieldAverage; libs (fieldFunctionObjects);
+        writeControl writeTime; timeStart 5;
+        fields ( U { mean on; prime2Mean off; base time; } alpha.water { mean on; prime2Mean off; base time; }
+                 p_rgh { mean on; prime2Mean off; base time; } );
+    }
+    caudales
+    {
+        type surfaceFieldValue; libs (fieldFunctionObjects); writeControl timeStep; writeInterval 200; log true;
+        writeFields false; regionType patch; name outlet; operation sum; fields ( phi );
+    }
+}

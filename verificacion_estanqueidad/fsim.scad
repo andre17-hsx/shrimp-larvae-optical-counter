@@ -1,0 +1,17 @@
+color([0.55,0.57,0.6]) import("fsim_stl/g0.stl");
+color([0.12,0.12,0.14]) import("fsim_stl/g1.stl");
+color([0.8,0.82,0.85]) import("fsim_stl/g2.stl");
+color([0.25,0.25,0.28]) import("fsim_stl/g3.stl");
+color([0.5,0.5,0.55]) import("fsim_stl/g4.stl");
+color([0.85,0.7,0.2]) import("fsim_stl/g5.stl");
+color([0.3,0.5,0.8]) import("fsim_stl/g6.stl");
+color([0.8,0.15,0.12]) import("fsim_stl/g7.stl");
+color([0.62,0.74,0.86]) import("fsim_stl/g8.stl");
+color([0.45,0.6,0.75]) import("fsim_stl/g9.stl");
+color([0.55,0.85,0.95]) import("fsim_stl/g10.stl");
+color([0.95,0.55,0.1]) import("fsim_stl/g11.stl");
+color([0.1,0.1,0.12]) import("fsim_stl/g12.stl");
+color([0.2,0.55,0.28]) import("fsim_stl/g13.stl");
+color([0.82,0.84,0.87]) import("fsim_stl/g14.stl");
+color([0.85,0.1,0.1]) import("fsim_stl/g15.stl");
+color([0.35,0.55,0.75]) import("fsim_stl/g16.stl");

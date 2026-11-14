@@ -1,0 +1,17 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      omega;
+}
+
+dimensions [0 0 -1 0 0 0 0]; internalField uniform 342.586;
+boundaryField
+{
+    inletWater { type fixedValue; value uniform 342.586; }
+    bottom { type omegaWallFunction; value uniform 342.586; }
+    atmosphere { type inletOutlet; inletValue uniform 342.586; value uniform 342.586; }
+    outlet { type inletOutlet; inletValue uniform 342.586; value uniform 342.586; }
+    frontAndBack { type empty; }
+}

@@ -1,0 +1,13 @@
+#!/bin/bash
+source /usr/lib/openfoam/openfoam2512/etc/bashrc
+NP=8
+blockMesh > log.blockMesh 2>&1
+snappyHexMesh -overwrite > log.snappy 2>&1
+checkMesh > log.checkMesh 2>&1
+[ "0" = "1" ] && exit 0
+cp -r 0.orig 0
+decomposePar > log.decompose 2>&1
+mpirun --use-hwthread-cpus -np $NP interFoam -parallel > log.interFoam 2>&1
+reconstructPar -latestTime > log.reconstruct 2>&1
+postProcess -func writeCellCentres -latestTime > log.C 2>&1
+postProcess -func writeCellVolumes -latestTime > log.V 2>&1

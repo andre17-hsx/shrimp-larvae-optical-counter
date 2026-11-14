@@ -1,0 +1,21 @@
+# Perfil de la rampa (cuarto de circulo R=60 mm). x: mm desde la cresta (negativo = aguas arriba). z: mm sobre el fondo del cajon.
+# Cerrar el perfil con (0,0) para la pieza solida; el arco es la cara mojada.
+punto,x_mm,z_mm
+0,-60.000,0.000
+1,-54.119,0.289
+2,-48.295,1.153
+3,-42.583,2.584
+4,-37.039,4.567
+5,-31.716,7.085
+6,-26.666,10.112
+7,-21.936,13.619
+8,-17.574,17.574
+9,-13.619,21.936
+10,-10.112,26.666
+11,-7.085,31.716
+12,-4.567,37.039
+13,-2.584,42.583
+14,-1.153,48.295
+15,-0.289,54.119
+16,0.000,60.000
+17,0.000,0.000

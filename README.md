@@ -4,6 +4,8 @@ Design study for a machine that counts shrimp post-larvae automatically while th
 
 The repository holds the whole engineering trail: the parametric 3D model, the hydraulic simulations that shaped the channel, the leak and collision checks, the optics and electronics specifications, and the build package for a first physical test rig.
 
+**Live demos:** [interactive flow diagram](https://andre17-hsx.github.io/shrimp-larvae-optical-counter/diagrama_flujo/diagrama_flujo.html) (3D model, flow animation and camera view) · [3D CFD viewer](https://andre17-hsx.github.io/shrimp-larvae-optical-counter/cfd_3d/informe_preliminar/index.html)
+
 > **Status:** design and simulation. Nothing here has been validated against a physical prototype yet. The detailed documents are written in Spanish.
 
 ![Isometric view of the counter model](Fusion360_VAKI_Macro/vista_previa_isometrica.png)
